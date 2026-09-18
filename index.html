@@ -171,6 +171,7 @@ form{padding:0 1rem}
 <button onclick="go('skills');closeMenu()">Skills</button>
 <button onclick="go('projects');closeMenu()">Projects</button>
 <button onclick="go('experience');closeMenu()">Experience</button>
+<button onclick="go('education');closeMenu()">Academic</button>
 <button onclick="go('blog');closeMenu()">Blog</button>
 <button onclick="go('contact');closeMenu()">Contact</button>
 <button onclick="toggleTheme()">🌙</button>
@@ -181,7 +182,7 @@ form{padding:0 1rem}
 <section class="container hero hidden" id="hero">
 <canvas class="hero-bg-canvas" id="mlCanvas"></canvas>
 <div class="hero-profile-section">
-<div class="profile"><img src="picture/Shifat.jpeg" alt="Shafayeth Ahmed Chowdhury"></div>
+<div class="profile"><img src="picture/Shifat-passport.png" alt="Shafayeth Ahmed Chowdhury"></div>
 <div class="profile-name">Shafayeth Ahmed Chowdhury (Shifat)</div>
 <div class="profile-name"><p>PHP & Laravel Developer</p></div>
 </div>
@@ -270,7 +271,7 @@ form{padding:0 1rem}
     <div class="project">
       <img src="picture/cse.png" alt="CSE Department Management System">
       <div class="project-info">
-        <h3>CSE Department Management System (Under Active Development)</h3>
+        <h3>CSE Department Management System</h3>
         <p>A Laravel-based multi-role project that manages CSE department operations, including students, faculty, courses, notices, and role-based administration through a centralized dashboard.</p>
         <div class="project-links">
           <a href="https://drive.google.com/drive/folders/1bfBzAF6BXxqKZ8a6v5r5o1QgkZ5qzOh2?usp=drive_link" class="btn btn-demo" target="_blank">Drive Snap Demo</a>
@@ -297,16 +298,36 @@ form{padding:0 1rem}
 <section class="container hidden" id="experience">
 <div class="section-title">
 <h2>Experience</h2>
-<p>Work & Academic Background</p>
+<p>Work Background</p>
 </div>
 <div class="experience-wrapper">
 <div class="experience-card">
-<h4>Trainee | RTM Al-Kabir Technical University</h4>
-<p>Feb 2024 - Feb 2025 | Integrated University Management System</p>
+<h4>Customer Support Executive | Faith IT</h4>
+<p> May 2026 - June 2026 </p>
 </div>
 <div class="experience-card">
-<h4>B.Sc in Computer Science & Engineering | RTM Al-Kabir Technical University</h4>
-<p>2022 - 2026 (Final Semester) | Focus on Software Engineering, Databases, and Web Technologies</p>
+<h4>IT Executive | RTM Al-Kabir Technical University</h4>
+<p>March 2025 - March 2026 | Integrated University Management System</p>
+</div>
+</div>
+</section>
+
+<section class="container hidden" id="education">
+<div class="section-title">
+<h2>Academic Background</h2>
+</div>
+<div class="experience-wrapper">
+<div class="experience-card">
+<h4>Bachelor in Computer Science & Engineering | RTM Al-Kabir Technical University,Sylhet,Bangladesh.</h4>
+<p> Duration : June 2022 - July 2026 | <b>CGPA : 3.90 (Out of 4.00)</b></p>
+</div>
+<div class="experience-card">
+<h4> Higher Secondary Certificate | Shahjalal City Collage,Sylhet,Bangladesh.</h4>
+<p> Passing Year: 2021  | Group : Science | <b>GPA: 4.33(Out of 5.00)</b></p>
+</div>
+<div class="experience-card">
+<h4> Secondary School Certificate | Barhal Eahia High School,Zakiganj,Sylhet,Bangladesh.</h4>
+<p> Passing Year: 2019  | Group : Science | <b>GPA: 4.17(Out of 5.00)</b></p>
 </div>
 </div>
 </section>
@@ -314,20 +335,14 @@ form{padding:0 1rem}
 <section class="container hidden" id="blog">
 <div class="section-title">
 <h2>Blog / Research</h2>
-<p>Articles, Papers & Projects I've worked on</p>
+<p>Articles, Papers I've worked on</p>
 </div>
 <div class="blog-wrapper">
 <div class="blog-card">
 <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Research Icon">
-<h4>Machine Learning in Web Applications </h4>
-<p>Exploring AI to enhance user experiences with predictive models.</p>
-<a href="#" >Read More</a>
-</div>
-<div class="blog-card">
-<img src="https://cdn-icons-png.flaticon.com/512/888/888840.png" alt="Research Icon">
-<h4>Random Ice Forest Algorithm for Anomaly Detection</h4>
-<p>Ensuring Filter API Request in each steps.</p>
-<a href="#" >Read More</a>
+<h4> Machine Learning in Web Applications (Working For Publication)</h4>
+<p>AI-Driven Behavioral Anomaly Detection for Zero-Trust Role-Based Access Control in Monolithic Architecture.</p>
+<a href="Zero Trust Final Thesis (Complete).pdf" target="_blank">Read More</a>
 </div>
 </div>
 </section>
@@ -339,20 +354,6 @@ form{padding:0 1rem}
 <button onclick="window.location.href='mailto:dev.shafayeth@gmail.com'">Hire Me</button>
 </div>
 </section>
-
-<section class="container hidden" id="contact">
-<div class="section-title">
-<h2>Contact</h2>
-<p>Get in touch</p>
-</div>
-<form onsubmit="handleSubmit(event)">
-<input placeholder="Name" required>
-<input type="email" placeholder="Email" required>
-<textarea placeholder="Message" rows="5" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
-
 <footer>
 <div class="footer-grid container">
 <div>
@@ -364,15 +365,14 @@ form{padding:0 1rem}
 <p onclick="go('hero')">Home</p>
 <p onclick="go('projects')">Projects</p>
 <p onclick="go('experience')">Experience</p>
+<p onclick="go('education')">Academic</p>
 <p onclick="go('blog')">Blog</p>
 <p onclick="go('contact')">Contact</p>
 </div>
 <div>
 <h4>Social</h4>
 <p><a href="https://github.com/shafayethahmed" target="_blank">GitHub</a></p>
-<p><a href="https://www.facebook.com/sh.if.at.370149/" target="_blank">Facebook</a></p>
-<p><a href="#" target="_blank">LinkedIn</a></p>
-<p><a href="mailto:dev.shafayeth@gmail.com">Email</a></p>
+<p> <a href="https://www.facebook.com/sh.if.at.370149" target="_blank">Facebook</a></p>
 </div>
 </div>
 <div class="copy">© 2026 Shafayeth Ahmed Chowdhury. All rights reserved.</div>
@@ -619,5 +619,3 @@ animate();
 </script>
 </body>
 </html>
-
-
